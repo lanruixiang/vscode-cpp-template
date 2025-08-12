@@ -6,11 +6,12 @@
       "type": "process",
       "command": "g++",
       "args": [
+        "-DDEBUG",
         "-O2",
         "-std=c++14",
         "-Wall",
         "-Wextra",
-        "-Wl,--stack=268435456",
+        "-Wl,--stack=1073741824",
         "${file}",
         "-o",
         "${fileDirname}/${fileBasenameNoExtension}.exe"
